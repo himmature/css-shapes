@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(230, 190, 118);
+    flex-direction: column;
+}
+
+.camera {
+    width: 202px;
+    height: 138px;
+    background-color: #ccc;
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 0px 0px 8px 6px #eee;
+    position: relative;
+}
+.camera > span {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    border-radius: 50%;
+    right: 0;
+    transform: translate(-100%, 50%)
+}
+.camera::before {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 30px;
+    background-color: rgb(125, 125, 190);;
+    transform: translate(20%, -100%);
+}
+
+.lens {
+    background-color: rgb(187, 170, 170);
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+.lens > div {
+    background-color: rgb(162, 162, 201);
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border-top: 45px solid rgb(125, 125, 190);
+    border-left: 45px solid rgb(87, 87, 107);
+    border-right: 45px solid rgb(87, 87, 107);
+    border-bottom: 45px solid rgb(125, 125, 190);
+}
