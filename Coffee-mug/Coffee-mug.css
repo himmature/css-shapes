@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgreen;
+    flex-direction: column;
+}
+
+.coffee-mug {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #352616;
+    box-shadow: 0 0 8px 10px #3f2d19,
+                0 0 0 20px #501c1c,
+                0 0 0 30px #ce7808,
+                0 0 0 50px #ff9200,
+                0 120px 0 -25px #3f2d19,
+                68px 120px 0 -5px #3f2d19,
+                98px 47px 0 -25px #3f2d19,
+                -22px 206px 0 -46px #3f2d19,
+                20px 250px 0 -62px #3f2d19;
+    position: relative;
+    
+}
+
+.coffee-mug::before {
+    content: '';
+    position: absolute;
+    height: 30px;
+    width: 50px;
+    background-color: #be8232;
+    bottom: 153px;
+    left: 151px;
+    transform: rotate(45deg);
+    border-top: 34px solid #ff9200;
+    z-index: -1;
+    border-radius: 5px;
+}
